@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Band Website</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/media/audio1.mp3">
+    <link rel="stylesheet" href="assets/media/video1.mp4">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg id="animated-logo" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+                <path fill="#ffffff" d="M7,20A5,5,0,0,1,2,15V5A5,5,0,0,1,7,0H17a5,5,0,0,1,5,5v10a5,5,0,0,1-5,5Zm9-9V9a1,1,0,0,0-1-1H9A1,1,0,0,0,8,9v2a1,1,0,0,0,1,1h6A1,1,0,0,0,16,11ZM12,3a3,3,0,0,0-3,3v2a3,3,0,0,0,3,3,1,1,0,0,0,0-2,1,1,0,0,1,0-2,1,1,0,0,0,0-2Zm0,8a1,1,0,0,0-1,1v2a1,1,0,0,0,2,0V12A1,1,0,0,0,12,11Z"/>
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section>
+            <div class="biography">
+                <h1>Spice Girls</h1>
+
+                <p>The Spice Girls burst onto the music scene in the mid-1990s, captivating audiences worldwide with their infectious pop tunes, dynamic personalities, and empowering messages of girl power. Formed in London, England, the group comprised five members:
+
+                <ol>
+                    <li>Scary Spice (Melanie Brown) Known for her bold and fearless attitude, Melanie brought an energetic flair to the group with her powerful vocals and fearless stage presence.</li>
+                    <li>Sporty Spice (Melanie Chisholm) Renowned for her athletic prowess and soulful voice, Melanie C added a unique edge to the Spice Girls with her sporty style and vocal range.</li>
+                    <li>Ginger Spice (Geri Halliwell) With her fiery red hair and infectious charisma, Geri infused the group with her bold personality and distinctive vocals, becoming an iconic symbol of individuality.</li>
+                    <li>Baby Spice (Emma Bunton) The epitome of sweetness and innocence, Emma enchanted fans with her blonde locks, bubbly personality, and sugary-sweet vocals, capturing the hearts of audiences worldwide.</li>
+                    <li>Posh Spice (Victoria Beckham) Exuding sophistication and glamour, Victoria brought a touch of elegance to the group with her chic style and understated vocals, earning her the title of Posh Spice.</li>
+                </ol>
+       
+                <p>Together, the Spice Girls dominated the charts with smash hits like "Wannabe," "Spice Up Your Life," and "Say You'll Be There," breaking records and setting trends with their catchy melodies and vibrant performances. Their influence extended far beyond the music industry, sparking a global phenomenon known as "Spice Mania" and inspiring a generation of fans with their message of empowerment and unity.</p>
+            
+                <hr class="styled_line">
+
+
+                <section class="video_container">
+                    <h2>City Lights Video Highlight</h2>
+                    <video width="560" height="315" controls>
+                        <source src="assets/media/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+                
+              
+
+        <section class="tour-dates">
+            <h2>Tour Dates</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>City</th>
+                        <th>Venue</th>
+                        <th>Tickets</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>April 19, 2024</td>
+                        <td>Jamaica</td>
+                        <td>Wavs Beach</td>
+                        <td><a href="#">Buy Tickets</a></td>
+                    </tr>
+                    <tr>
+                        <td>May 20, 2024</td>
+                        <td>Barbados</td>
+                        <td>Halo Ultra Lounge</td>
+                        <td><a href="#">Buy Tickets</a></td>
+                    </tr>
+                    <tr>
+                        <td>June 5, 2024</td>
+                        <td>Tobago</td>
+                        <td>Shaw Park Complex</td>
+                        <td><a href="#">Buy Tickets</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="latest-single">
+            <h3>Latest Single</h3>
+            <audio controls>
+                <source src="assets\media\audio1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="subscriptionForm">
+                <div>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                </div>
+              </form>
+              <div id="message"></div>
+            
+              <script src="assets/js/styles.js"></script>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Spice Girls. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

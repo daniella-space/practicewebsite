@@ -1,0 +1,204 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: violet;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    margin-bottom: 10px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#animated-logo {
+    animation: rotate 4s linear infinite;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+nav li a:hover {
+    color: #555; 
+
+}
+/* Main content styles */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+h1 {
+    text-align: center; /* Center the header */
+}
+
+.biography {
+    max-width: 1000px;
+    
+
+}
+
+.styled_line {
+    border: none; 
+    height: 2px; 
+    background-color: #333; 
+    margin: 20px 0; 
+}
+
+.video_container {
+    position: relative;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style-type: decimal; /* Numbered list */
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Tour Dates table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: lightcoral;
+    color: #fff;
+}
+
+/* Newsletter form styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.subscribe-button {
+    background-color: black;
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .subscribe-button:hover {
+    background-color: gray; /* Change background color on hover */
+  }
+  
+  .subscription-success {
+    color: green;
+    text-transform: uppercase;
+  }
+  
+/* Footer styles */
+footer {
+    background-color: violet;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .biography {
+        max-width: 100%;
+    }
+
+    .video-container {
+        display: block;
+    }
+
+    .video-heading {
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
